@@ -1,16 +1,16 @@
-@apiUrl = https://localhost:7001
+@apiUrl = https://localhost:7001/api/v1/customers
 
 
 ### Get all Customers
-GET {{apiUrl}}/customers
+GET {{apiUrl}}
 Accept: application/json
 
 ### Get Customer by ID
-GET {{apiUrl}}/customers/1
+GET {{apiUrl}}/1
 Accept: application/json
 
 ### Create a new Customer
-POST {{apiUrl}}/customers
+POST {{apiUrl}}
 Content-Type: application/json
 
 {

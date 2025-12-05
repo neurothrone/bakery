@@ -7,7 +7,7 @@ public static class CustomerEndpoints
     public static void MapCustomerEndpoints(this IEndpointRouteBuilder app)
     {
         var group = app
-            .MapGroup("/customers")
+            .MapGroup("/api/v1/customers")
             .WithTags("Customers");
 
         group.MapGet("", CustomerHandlers.GetAllCustomersAsync)
