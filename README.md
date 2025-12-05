@@ -1,5 +1,11 @@
 # Bakery
 
+## Prerequisites
+
+- [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
+- [Docker](https://www.docker.com/get-started)
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+
 ## Commands
 
 ### Create Projects
