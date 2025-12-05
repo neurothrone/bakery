@@ -4,3 +4,19 @@
 ### Get all Customers
 GET {{apiUrl}}/customers
 Accept: application/json
+
+### Get Customer by ID
+GET {{apiUrl}}/customers/1
+Accept: application/json
+
+### Create a new Customer
+POST {{apiUrl}}/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "storeNumber": 1001,
+  "address": "123 Main St",
+  "postalCode": "12345",
+  "city": "Anytown"
+}
