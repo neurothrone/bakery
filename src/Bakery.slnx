@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="Bakery.Api/Bakery.Api.csproj" />
-  <Project Path="Bakery.Data\Bakery.Data.csproj" />
+  <Project Path="Bakery.Data/Bakery.Data.csproj" />
 </Solution>
