@@ -1,3 +1,5 @@
+using Bakery.Database.Repositories;
+
 namespace Bakery.Api.Endpoints;
 
 public static class CustomerEndpoints
@@ -14,8 +16,10 @@ public static class CustomerEndpoints
 public static class CustomerHandlers
 {
     public static async Task<IResult> GetAllCustomers(
+        CustomerRepository repository,
         CancellationToken cancellationToken)
     {
-        return Results.Ok();
+        var customers = await repository.GetAllCustomers();
+        return Results.Ok(customers);
     }
 }
