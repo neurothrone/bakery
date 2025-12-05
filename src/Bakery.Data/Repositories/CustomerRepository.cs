@@ -1,8 +1,8 @@
-using Bakery.Database.Data;
-using Bakery.Database.Entities;
+using Bakery.Data.Contexts;
+using Bakery.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bakery.Database.Repositories;
+namespace Bakery.Data.Repositories;
 
 public class CustomerRepository(BakeryDbContext dbContext)
 {

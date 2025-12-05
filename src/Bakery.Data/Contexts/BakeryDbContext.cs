@@ -1,7 +1,7 @@
-using Bakery.Database.Entities;
+using Bakery.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bakery.Database.Data;
+namespace Bakery.Data.Contexts;
 
 public class BakeryDbContext(DbContextOptions<BakeryDbContext> options) : DbContext(options)
 {

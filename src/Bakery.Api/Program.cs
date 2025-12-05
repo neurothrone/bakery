@@ -1,6 +1,6 @@
 using Bakery.Api.Endpoints;
-using Bakery.Database.Data;
-using Bakery.Database.Repositories;
+using Bakery.Data.Contexts;
+using Bakery.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

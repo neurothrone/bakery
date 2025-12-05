@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Bakery.Database.Entities;
+namespace Bakery.Data.Entities;
 
 [Table("customers")]
 public class CustomerEntity

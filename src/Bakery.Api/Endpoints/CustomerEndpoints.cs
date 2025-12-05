@@ -1,4 +1,4 @@
-using Bakery.Database.Repositories;
+using Bakery.Data.Repositories;
 
 namespace Bakery.Api.Endpoints;
 
