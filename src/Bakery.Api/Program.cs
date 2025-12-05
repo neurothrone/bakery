@@ -12,7 +12,22 @@ builder.Services.AddDbContext<BakeryDbContext>(options =>
 
 builder.Services.AddScoped<CustomerRepository>();
 
+builder.Services.AddCors();
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseCors(corsPolicyBuilder => corsPolicyBuilder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+    );
+}
+else
+{
+    app.UseCors();
+}
 
 app.UseHttpsRedirection();
 
